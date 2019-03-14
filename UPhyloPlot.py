@@ -1,4 +1,4 @@
-# UPhyloPlot Version 1.0
+# UPhyloPlot Version 1.1
 # Stefan Kurtenbach
 # Stefan.Kurtenbach@med.miami.edu
 
@@ -212,7 +212,7 @@ for file in os.listdir("./Inputs"):
         output.append(L2)
         output.append(L3)
 
-        newfilename = "./Outputs/" + file.replace(".csv", ".svg")
+        newfilename = file.replace(".csv", ".svg")
         text_file = open(newfilename, "a")       
         text_file.write("\n".join(output))
         text_file.write("\n")
